@@ -55,10 +55,6 @@ def start():
     if choix == "o":
         os.system('venv/bin/python3 maj.py')
 
-    # demarrer le serveur
-    print("Demarrage du serveur")
-    os.system('venv/bin/flask run')
-
     # demander si l'utilisateur veut demarrer le serveur au demarrage de l'ordinateur
     print("Voulez-vous demarrer le serveur au demarrage de l'ordinateur ? [O(Oui)/n(Non)]")
     print("Would you like to start the server when the computer start ? [O(Yes)/n(No)]")
@@ -68,6 +64,10 @@ def start():
     else:
         print("Le serveur ne demarrera pas au demarrage de l'ordinateur")
         print("Ok nothing append when the computer start...")
+
+    # demarrer le serveur
+    print("Demarrage du serveur")
+    os.system('venv/bin/flask run')
 
 if __name__ == "__main__":
     start()

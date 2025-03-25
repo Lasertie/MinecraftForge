@@ -187,7 +187,7 @@ def new_server():
             commands = json.load(f)
         
         # on utilise la librairy subprocess pour lancer le serveur avec la commande trouvé dans le fichier commands.json selon le type de serveur
-        command = commands[server_type][server_version]['install'] # ex: java -jar install.jar --installServer
+        command = commands[server_type][server_version]['install'] # java -jar install.jar --installServer
         result = subprocess.run(command, cwd=server_path, capture_output=True)
         print(result.stdout)
         print(result.stderr)
@@ -203,11 +203,11 @@ def new_server():
             os.rename(old_name, new_name)
             print(f"Renamed {old_name} to {new_name}")
 
-        # lancer le serveur avec les paramètres de ram
-        result = subprocess.run(['java', '-Xms' + server_ram_min,'G -Xmx' + server_ram_max,'G -jar', 'server.jar', 'nogui'], cwd=server_path, capture_output=True)
-        print(result.stdout) # a changer pour fonctionner avec le fichier de commandes.json
-                            # en: to change to work with the commands.json file
-        print(result.stderr)
+        # # lancer le serveur avec les paramètres de ram
+        # result = subprocess.run(['java', '-Xms' + server_ram_min,'G -Xmx' + server_ram_max,'G -jar', 'server.jar', 'nogui'], cwd=server_path, capture_output=True)
+        # print(result.stdout) # a changer pour fonctionner avec le fichier de commandes.json
+        #                     # en: to change to work with the commands.json file
+        # print(result.stderr)
         # on sauvegarde les serveurs
         with open('servers.json', 'w') as f:
             json.dump(servers, f)
@@ -311,7 +311,7 @@ def servers_ctrl():
                     process.kill()
                     break
         elif action == 'delete':
-            os.system(f'rm -r "{server_dir}"')
+            os.remove(server_dir)
             del servers[server_name]
             with open('servers.json', 'w') as f:
                 json.dump(servers, f)
