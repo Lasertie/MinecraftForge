@@ -1,6 +1,3 @@
-instance/
-__pycache__/
-__pycache__/*
-servers/
-servers/*
 venv_old/
+instance/
+servers/
