@@ -3,4 +3,4 @@ instance/
 servers/
 __pycache__/
 venv/
-migration/
+migrations/
