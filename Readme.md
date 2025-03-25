@@ -40,6 +40,7 @@ A simple GUI for managing a Minecraft server.
 - Update of 'versions.json' (the file that contains all the versions of the server)
 - More server types (like paper, bukkit, etc.) (update of 'versions.json')
 - Update of 'commands.json' (the file that contains all the commands for each versions)
+- Reset options when re-install
 
 ## Installation
 1. Download the latest release from the [releases page]()

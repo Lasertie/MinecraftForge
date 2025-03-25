@@ -2,3 +2,4 @@ venv_old/
 instance/
 servers/
 __pycache__/
+venv/
