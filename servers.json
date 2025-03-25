@@ -1,1 +1,21 @@
-{"machin": {"type": "forge", "version": "1.17.1", "ramMin": "1G", "ramMax": "2G", "port": "25565", "dir": "Machin", "maxPlayers": "20"}, "Exemple": {"type": "forge", "version": "1.21.1", "ramMin": "1G", "ramMax": "2G", "port": "25565", "dir": "servers/Exemple", "maxPlayers": "20", "log": ""}, "khk": {"type": "forge", "version": "1.21.1", "ramMin": "1G", "ramMax": "2G", "port": "25565", "dir": "servers/khk", "maxPlayers": "20", "log": ""}}
+{
+    "khk": {
+        "type": "forge",
+        "version": "1.21.1",
+        "ramMin": "1G",
+        "ramMax": "2G",
+        "port": "25565",
+        "dir": "servers/khk",
+        "maxPlayers": "20",
+        "log": ""
+    },
+    "test": {
+        "type": "forge",
+        "version": "1.21.1",
+        "ramMin": "1G",
+        "ramMax": "2G",
+        "port": "25565",
+        "dir": "servers/test",
+        "maxPlayers": "20"
+    }
+}
