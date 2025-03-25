@@ -1,3 +1,5 @@
 venv_old/
 instance/
 servers/
+server
+pycache/
