@@ -1,5 +1,5 @@
 venv_old/
 instance/
 servers/
-server
-pycache/
+__pycache___/
+__pycache__/
